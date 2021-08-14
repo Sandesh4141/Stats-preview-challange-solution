@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    color: whitesmoke; /* temp-color */
+}
+.container{
+    background-color:  hsl(233, 47%, 7%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.cards{
+   display: flex;
+   width: 1045px;
+   justify-content: center;
+  
+}
+
+#firstCard{
+    background-color: hsl(244, 38%, 16%);
+    width: 50%;
+    padding: 3rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px 0 0 8px;
+
+
+}
+#insight{
+    color: hsl(277, 64%, 61%);
+}
+#firstCard h1{
+    margin-bottom: 1.4rem;
+    font-size: 2.3rem;
+    
+
+}
+#firstCard p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+    margin-bottom: 4.5rem;
+}
+#definations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+dt > h3{
+    font-weight: 800;
+    font-size: larger;
+}
+dd{
+    
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+#secondCard{
+    width: 50%;
+    border-radius: 0 8px 8px 0;
+    background-color:hsl(277, 68%, 18%); ;
+    
+}
+
+#headerImg{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 8px 8px 0;
+    opacity: 0.5;
+
+    
+}
+
+/* text styling classes */
+
+.upper{
+    text-transform: uppercase;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size:10px;
+    font-weight: 400;
+}
+
+
+/* mobile width styling (375px)*/ 
+
+@media (max-width:375px){
+    .container{
+        height: auto;
+        flex-direction:column;
+        align-items: center;
+    }
+    .cards{
+        flex-direction: column-reverse;
+        max-width: 375px;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 1rem;
+
+    }
+    #firstCard{
+        width: 80%;
+        border-radius: 0 0 8px 8px;
+        padding: 1.2em;
+        text-align: center;
+
+    }
+    #firstCard > h1{
+        font-size: 1.6em;
+        text-align: center;
+       
+    }
+    #firstCard > p{
+       font-size: 10px;
+       margin-bottom: 1rem;
+       line-height: 2.3em;
+    }
+    #secondCard{
+        width: 80%;
+        margin: 3rem 0 0 0;
+        border-radius: 8px 8px 0 0;
+    }
+    #headerImg{
+        border-radius: 8px 8px 0 0;
+    }
+
+    #definations{
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    #definations > div{
+        margin:1rem 1rem;
+    }
+   
+    dd{
+        padding: 0;
+    }
+}
