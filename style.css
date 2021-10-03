@@ -66,6 +66,7 @@ dd{
 #secondCard{
     width: 50%;
     border-radius: 0 8px 8px 0;
+    height: auto;
     background-color:hsl(277, 68%, 18%); ;
     
 }
@@ -91,7 +92,7 @@ dd{
 
 /* mobile width styling (375px)*/ 
 
-@media (max-width:375px){
+@media (max-width:400px){
     .container{
         height: auto;
         flex-direction:column;
@@ -112,23 +113,25 @@ dd{
         text-align: center;
 
     }
-    #firstCard > h1{
+    #firstCard  h1{
         font-size: 1.6em;
         text-align: center;
        
     }
-    #firstCard > p{
+    #firstCard  p{
        font-size: 10px;
        margin-bottom: 1rem;
        line-height: 2.3em;
     }
     #secondCard{
+        height: 100vh;
         width: 80%;
         margin: 3rem 0 0 0;
         border-radius: 8px 8px 0 0;
     }
     #headerImg{
         border-radius: 8px 8px 0 0;
+        opacity: 0.1;
     }
 
     #definations{
